@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game News Blog - GNB</title>
+  <link rel="icon" href="/image/favicon_bT8_icon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <div class="logo">
+      <h4>GNB - Game News Blog</h4>
+    </div>
+    <div class="menu-ef">
+      <input type="checkbox" class="toggler">
+      <div class="hamburguer">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><input type="text" name="search" placeholder="Pesquisa..."></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <header class="abertura">
+        <div class="container abertura-dentro">
+            <form class="box" action="" method="POST">
+                <h1>Login</h1>
+                <input type="text" name="" placeholder="Usuario">
+                <input type="password" name="" placeholder="Senha">
+                <input type="submit" name="" value="Login">
+                <a href="#">Esqueceu sua senha?</a>
+            </form>
+          
+        </div>
+    
+      </header>
+
+  <footer>
+    <div class="logo">
+      <h4>By: Felipe Vinicius do Nascimento</h4>
+    </div>
+    <div class="middle">
+      <div class="sm-container">
+        <i class="show-btn fas fa-user"></i>
+        <div class="sm-menu">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script>
+  $(".show-btn").click(function(){
+    $(".sm-menu").fadeToggle("fast");
+  })
+  </script>
+</body>
+
+</html>

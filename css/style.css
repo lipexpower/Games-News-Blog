@@ -100,6 +100,70 @@ body {
   font-size: 22px;
 }
 
+.box {
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(24, 39, 51, 0.85);
+  text-align: center;
+}
+
+.box h1 {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type="text"], .box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid rgba(13, 110, 139, 0.75);
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #FFF;
+  border-radius: 20px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+  width: 280px;
+  border-color: #FFF;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FFF;
+  padding: 14px 40px;
+  outline: none;
+  color: #FFF;
+  border-radius: 20px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: rgba(13, 110, 139, 0.75);
+}
+
+.box a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,17 +178,6 @@ footer {
   background-color: white;
 }
 
-input[type=text] {
-  width: 200px;
-  height: 30px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 200%;
-}
-
 .middle {
   -webkit-transform: translate(-40%, -10%);
           transform: translate(-40%, -10%);
@@ -135,7 +188,7 @@ input[type=text]:focus {
 }
 
 .sm-container i {
-  color: #000000;
+  color: rgba(13, 110, 139, 0.75);
   padding: 20px;
   font-size: 20px;
   cursor: pointer;
@@ -149,7 +202,7 @@ input[type=text]:focus {
 }
 
 .sm-menu {
-  background: rgba(13, 110, 139, 0.75);
+  background: rgba(24, 39, 51, 0.85);
   position: absolute;
   border-radius: 9px;
   -webkit-transform: translateY(-118%);
