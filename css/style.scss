@@ -1,0 +1,153 @@
+$cor-principal: rgba(13, 110, 139, 0.75);
+$cor-fontes: #FFF;
+$cor-overlay: rgba(24, 39, 51, 0.85);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --vel-menu: 0.75s;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+  }
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.abertura{
+    background-color: $cor-principal;
+    color: $cor-fontes;
+    height: 100vh;
+    position: relative;
+}
+
+.abertura:before{
+    content: '';
+    background: url(/image/retro.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.abertura .abertura-dentro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+}
+
+.abertura h1{
+    font-size: 2.5rem;
+}
+
+.abertura p{
+    font-size: 1.3rem;
+}
+
+.bto{
+    display: inline-block;
+    border: none;
+    background-color: $cor-principal;
+    color: $cor-fontes;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 0.5s ease-in;
+}
+
+.bto:hover{
+    opacity: 0.7;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    
+    background-color: white;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 22px;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+input[type=text] {
+    width: 200px;
+    height: 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  input[type=text]:focus {
+    width: 200%;
+  }
+
+  .middle{
+      transform: translate(-40%, -10%);
+      }
+
+.sm-container{
+    text-align: center;
+}
+
+.sm-container i{
+    color: #000000;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sm-container i:hover{
+    transform: scale(1.20);
+}
+
+.sm-menu{
+    background: $cor-principal;
+    position: absolute;
+    border-radius: 9px;
+    transform: translateY(-118%);
+    display: none;
+}
+
+.sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) translateY(2980%) rotate(45deg);
+}
