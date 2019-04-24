@@ -30,7 +30,7 @@ body {
 
 .abertura:before {
   content: '';
-  background: url(/retro.jpg) no-repeat center center/cover;
+  background: url(retro.jpg) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -100,6 +100,27 @@ body {
   font-size: 22px;
 }
 
+input[type="text"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid rgba(13, 110, 139, 0.75);
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #FFF;
+  border-radius: 20px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+input[type="text"]:focus {
+  width: 280px;
+  border-color: #FFF;
+}
+
 .box {
   width: 350px;
   padding: 40px;
@@ -118,7 +139,8 @@ body {
   font-weight: 500;
 }
 
-.box input[type="text"], .box input[type="password"] {
+.box input[type="text"],
+.box input[type="password"] {
   border: 0;
   background: none;
   display: block;
@@ -134,7 +156,8 @@ body {
   transition: 0.25s;
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus {
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
   width: 280px;
   border-color: #FFF;
 }
